@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
     <title>هیروتک</title>
     <!--**CSS**-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
@@ -16,21 +17,81 @@
     <!--**Navbar**-->
     <div class="navbar-fixed">
       <nav role="navigation">
-        <div class="nav-wrapper blue"><a href="#"><img class="brand-logo right" src="http://via.placeholder.com/80x80" alt=""/></a></div>
-      </nav>
-    </div>
-    <!--**heading**-->
-    <div class="container-fluid gray lighten-3">
-      <div class="row">
-        <div class="col s12 m8 l6 xl6 red">
-          <h1 class="animated fadeIn flow-text center-align" id="headText">خدمات نوین کامپیوتری</h1>
-          <p class="center-align">پیشرفت و موفقیت ‌کسب‌وکار شما , با کمک تجربه و روش های نوین دیجیتالی ما</p>
+        <div class="nav-wrapper indigo darken-4"><a class="brand-logo center" href="#"><img src="img/top_logo_tr.png"/></a><a class="button-collapse" href="#" data-activates="mobile-demo"><i class="material-icons">menu</i></a>
+          <!-- **Right nav**-->
+          <ul class="right hide-on-med-and-down waves-effect">
+            <li><a href="#"><i class="material-icons right tinn">home</i> خانه</a></li>
+            <li><a href="#"><i class="material-icons right tinn">extension</i> سرویس</a></li>
+            <li><a href="#"><i class="material-icons right tinn">apps</i> محصولات</a></li>
+            <li><a href="#"><i class="material-icons right tinn">folder_special</i> تعرفه</a></li>
+          </ul>
+          <!--** Left Nav** -->
+          <ul class="left hide-on-med-and-down waves-effect">
+            <li><a href="#"><i class="material-icons right tinn">loupe</i> نمونه کار</a></li>
+            <li><a href="#"><i class="material-icons right tinn">info_outline</i> درباره</a></li>
+            <li><a href="#"><i class="material-icons right tinn">insert_emoticon</i> تماس با ما</a></li>            
+            <li><a href="#"><i class="material-icons right">search</i></a></li>            
+          </ul>
+
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+
+          </ul>
         </div>
-        <div class="col s12 m4 l6 xl6"></div>
-      </div>
-    </div>
+      </nav>
+    </div><!-- **end of nav-->
+    <!--**heading**-->
+    <div class="container gray lighten-3">
+      <div class="row">
+
+        <div class="col s12 m12 l12 xl12">
+            <div class="card horizontal hoverable">
+                <div class="card-image">
+                  <img src="https://lorempixel.com/100/190/nature/6">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+
+                    <p class="center-text">I am a very simple card. I am good at containing small bits of information.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>
+              </div>
+        </div><!-- col end -->
+
+        <div class="col s12 m4 l6 xl6">
+            <div class="card">
+                <div class="card-image">
+                  <img src="images/sample-1.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+        </div>
+
+
+      </div><!-- row -->
+    </div><!-- ** end of heading** -->
+
+
     <!--**Script Indeside body 3 tab**-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.rtl.min.js"></script>
+    <script src="js/nima.js"></script>
+    <script>
+      $( document ).ready(function(){
+       $(".button-collapse").sideNav();
+      });
+    </script>
   </body>
 </html>

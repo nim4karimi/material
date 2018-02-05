@@ -27,13 +27,19 @@
 body{
     font-family: 'IRANYekanWeb-Light'!important;
     text-align: right !important;
-    background-color: #eeeeee !important;
+    background-color: #eeeeeec2 !important;
 }
 
-.navbar-fixed{
-    height: 60px;
 }
 #headText{
     padding: 20px 20px 20px 0;
 
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i{
+    height: 64px;
+    line-height: 64px;
+}
+.tinn{
+    font-size: 18px !important;
 }
