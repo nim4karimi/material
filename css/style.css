@@ -50,3 +50,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i{
 .parallax-container {
     height: 300px;
   }
+
+nav .brand-logo.center{
+    right: 40% !important;
+}
