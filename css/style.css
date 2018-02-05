@@ -43,3 +43,10 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i{
 .tinn{
     font-size: 18px !important;
 }
+.slider .indicators .indicator-item.active{
+    background-color:#1a237e !important;
+}
+
+.parallax-container {
+    height: 300px;
+  }
